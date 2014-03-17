@@ -9,11 +9,60 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     padding: 0.2em 0;
 }
 
+html{
+    background-color: #00CF69;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+}
+
 /* Space out content a bit */
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    // font-weight: 100;
 }
+
+
+// Spacing for the peeps section
+peeps{
+    width: 100%;
+    // height: 50%;
+    // background-color: rgba(255,255,255,0.1);
+    margin-bottom: 60px;
+    display: block;
+}
+
+h1{
+    font-weight: 100;
+    font-size: 18pt;
+    line-height: 150%;
+    // overflow: auto;
+}
+
+a{
+    margin-top: 50px;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 1px solid white;
+    font-weight: 100;
+    box-sizing: border-box;
+    display: inline-block;
+
+    &:hover{
+        color: white;
+        text-decoration: none;
+        background-color: rgba(255,255,255,0.1);
+    }
+}
+
+
+
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -67,10 +116,16 @@ body {
     margin-top: 28px;
 }
 
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 15pt;
+    }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        // max-width: 730px;
     }
 
     /* Remove the padding we set earlier */
