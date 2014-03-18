@@ -1,5 +1,8 @@
 'use strict'
 
+# Am I proud of this code? No. A thousand times no. But it only took me two beers to write, and god damn it, it works.
+# Also, snap svg is kind of a piece of shit. I mean, I keep trying it, but I always end up just animating svg path strings at the end of the day.
+
 angular.module('earshotApp')
 	.directive('peeps', ($window) ->
 		template: '<svg id="svg"></svg>'
