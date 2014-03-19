@@ -6,10 +6,12 @@ angular.module('earshotApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config ($routeProvider) ->
+  .config ($routeProvider, $locationProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
       .otherwise
         redirectTo: '/'
+
+    $locationProvider.html5Mode true
