@@ -5,18 +5,22 @@
 
 angular.module('earshotApp')
 	.directive('peeps', ($window) ->
-		template: '<svg id="svg"></svg>'
+		template: '<svg id="svg" ng-style="style"></svg>'
 		restrict: 'E'
+		scope: 
+			person: '@'
 		link: (scope, element, attrs) ->
 			# element.text 'this is the peeps directive'
 
 			scope.peeps = {}
 
-			setHeight = ->
+			setHeight = =>
 				# Get the height
 				w = angular.element $window
 				scope.style = 
 					height: w.height() / 2
+
+				console.log "Height is #{scope.style.height}"
 
 				# Figure out about how many children to add
 				scope.numPeeps = Math.floor Math.min(w.height(), w.width())/80
@@ -26,12 +30,6 @@ angular.module('earshotApp')
 				# Get the svg element
 				svgElem = element[0].children[0]
 				scope.s = s = Snap svgElem
-
-				# Load the svg icon
-				# Snap.load '../images/person.svg', (f) =>
-				# 	# s.append f
-				# 	scope.f = f
-				# 	# bigCircle = s.circle(150, 150, 100)
 
 			initPeeps = ->
 				console.dir element[0].children[0].clientHeight
@@ -81,7 +79,7 @@ angular.module('earshotApp')
 					console.log "Created new person at position #{pos.x}, #{pos.y}"
 
 					# Load the svg
-					Snap.load '../images/person.svg', (f) =>
+					Snap.load scope.person, (f) =>
 						# Initial attributes
 						elem = f.selectAll()
 

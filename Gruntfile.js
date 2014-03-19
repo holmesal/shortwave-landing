@@ -298,10 +298,12 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
+            '*.svg',
             'views/{,*/}*.html',
             'bower_components/**/*',
-            'images/{,*/}*.{webp}',
-            'fonts/*'
+            'images/{,*/}*.{webp,svg}',
+            'fonts/*',
+            'icons/*'
           ]
         }, {
           expand: true,
