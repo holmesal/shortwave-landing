@@ -2,8 +2,9 @@
 
 angular.module('earshotApp')
   .controller 'MainCtrl', ($scope) ->
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
-    ]
+
+  	# Track the loaded event
+  	mixpanel.track "Landing page loaded"
+
+  	# Track the link clicks
+  	mixpanel.track_links '#downloadLink', 'Download Link Clicked'
