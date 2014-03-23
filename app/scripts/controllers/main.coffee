@@ -7,4 +7,4 @@ angular.module('earshotApp')
   	mixpanel.track "Landing page loaded"
 
   	# Track the link clicks
-  	mixpanel.track_links '#downloadLink', 'Download Link Clicked'
+  	mixpanel.track_links '.downloadLink', 'Download Link Clicked'

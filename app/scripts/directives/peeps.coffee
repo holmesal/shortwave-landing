@@ -47,7 +47,6 @@ angular.module('earshotApp')
 				maxTurns = 20
 				while offset < 150
 					turn++
-					console.log 'offset!'
 					testPos = 
 						x: Math.random() * (element[0].children[0].clientWidth - 100)
 						y: Math.random() * (scope.style.height - 100)
@@ -96,8 +95,8 @@ angular.module('earshotApp')
 						# g.transform
 						# 	globalMatrix: [200,200]
 						@s.append @g
-						console.log @g.getBBox().x
-						console.log @pos.x
+						# console.log @g.getBBox().x
+						# console.log @pos.x
 
 				show: (timeout) ->
 					console.log 'showing peep!'
