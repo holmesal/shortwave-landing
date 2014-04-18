@@ -46,14 +46,41 @@ body{
 		// .center-block();
 		// width: 70%;
 		// text-align: left;
-		padding-top: 150px;
-		padding-bottom: 150px;
+		padding-top: 50px;
+		padding-bottom: 100px;
+		// padding-bottom: 20px;
 
-		// .name{
-		// 	font-weight: 100;
-		// 	letter-spacing: 3px;
-		// 	font-size: 33pt;
-		// }
+		.name{
+			font: "Helvetica";
+			// font-style: italic;
+			font-weight: 3000;
+			letter-spacing: 3px;
+			font-size: 85pt;
+			margin-bottom: 40px;
+			// margin-bottom: 25px;
+		}
+
+		.testflightLink{
+			border: 1px solid white;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			padding-left: 80px;
+			padding-right: 80px;
+
+			color: white;
+			// .box-sizing(border-box);
+			// float: left;
+			margin-top: 25px;
+			font-size: 12pt;
+
+			&:hover{
+				text-decoration: none;
+				background-color: rgba(255, 255, 255, 0.1);
+				cursor: pointer;
+				color: white;
+			}
+		}
+		
 
 		// .description{
 		// 	font-weight: 100;
@@ -62,26 +89,8 @@ body{
 		// }
 	}
 
-	.testflightLink{
-		border: 1px solid white;
-		padding-top: 12px;
-		padding-bottom: 12px;
-		padding-left: 80px;
-		padding-right: 80px;
 
-		color: white;
-		// .box-sizing(border-box);
-		// float: left;
-		margin-top: 25px;
-		font-size: 12pt;
 
-		&:hover{
-			text-decoration: none;
-			background-color: rgba(255, 255, 255, 0.1);
-			cursor: pointer;
-			color: white;
-		}
-	}
 // }
 
 
@@ -116,8 +125,9 @@ body{
 }
 
 .phone{
-	width: 80%;
-	max-width: 640px;
+	width: 100%;
+	// max-width: 640px;
+	max-width: 360px;
 	image-rendering: optimizeQuality !important;
 	.animated();
 	.fadeInUp();

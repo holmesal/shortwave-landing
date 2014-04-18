@@ -10727,10 +10727,17 @@ body {
   padding: 0.2em 0;
 }
 .text-block {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
-.testflightLink {
+.text-block .name {
+  font: "Helvetica";
+  font-weight: 3000;
+  letter-spacing: 3px;
+  font-size: 85pt;
+  margin-bottom: 40px;
+}
+.text-block .testflightLink {
   border: 1px solid white;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -10740,7 +10747,7 @@ body {
   margin-top: 25px;
   font-size: 12pt;
 }
-.testflightLink:hover {
+.text-block .testflightLink:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
@@ -10757,8 +10764,8 @@ body {
   animation-delay: 3s;
 }
 .phone {
-  width: 80%;
-  max-width: 640px;
+  width: 100%;
+  max-width: 360px;
   image-rendering: optimizeQuality !important;
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
