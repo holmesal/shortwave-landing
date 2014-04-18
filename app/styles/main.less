@@ -51,11 +51,10 @@ body{
 		// padding-bottom: 20px;
 
 		.name{
-			font: "Helvetica";
 			// font-style: italic;
-			font-weight: 3000;
+			// font-weight: 3000;
 			letter-spacing: 3px;
-			font-size: 85pt;
+			font-size: 65pt;
 			margin-bottom: 40px;
 			// margin-bottom: 25px;
 		}
@@ -68,8 +67,6 @@ body{
 			padding-right: 80px;
 
 			color: white;
-			// .box-sizing(border-box);
-			// float: left;
 			margin-top: 25px;
 			font-size: 12pt;
 
@@ -88,6 +85,12 @@ body{
 			
 		// }
 	}
+
+
+
+// @media (min-width: 600px) and (max-width: 767px) {
+// 	#responsiveLayout > .set(600px);
+// }
 
 
 
@@ -128,8 +131,26 @@ body{
 	width: 100%;
 	// max-width: 640px;
 	max-width: 360px;
-	image-rendering: optimizeQuality !important;
-	.animated();
-	.fadeInUp();
+	-webkit-image-rendering: optimizeLegibility;
 }
 
+
+// Mobile style tweaks
+
+// Only enable animations above 400px
+@media (min-width: 500px) {
+	.name{
+		font-size: 85pt !important;
+	}
+	.phone{
+		.animated();
+		.fadeInUp();
+	}
+}
+
+// Use normal helvetica on retina displays
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .testflightLink{
+  	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+}

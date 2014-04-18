@@ -10731,10 +10731,8 @@ body {
   padding-bottom: 100px;
 }
 .text-block .name {
-  font: "Helvetica";
-  font-weight: 3000;
   letter-spacing: 3px;
-  font-size: 85pt;
+  font-size: 65pt;
   margin-bottom: 40px;
 }
 .text-block .testflightLink {
@@ -10766,18 +10764,30 @@ body {
 .phone {
   width: 100%;
   max-width: 360px;
-  image-rendering: optimizeQuality !important;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInUp;
-  -moz-animation-name: fadeInUp;
-  -o-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+  -webkit-image-rendering: optimizeLegibility;
+}
+@media (min-width: 500px) {
+  .name {
+    font-size: 85pt !important;
+  }
+  .phone {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .testflightLink {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
 }
 /*# sourceMappingURL=/styles/main.css.map */
