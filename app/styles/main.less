@@ -26,6 +26,12 @@ body{
 	padding: 15px;
 }
 
+.animation-delay(@delay) {
+  -webkit-animation-delay: @delay;
+     -moz-animation-delay: @delay;
+          animation-delay: @delay;
+}
+
 .center-block {
   display: block;
   margin-left: auto;
@@ -51,6 +57,8 @@ body{
 		// padding-bottom: 20px;
 
 		.name{
+			.animated();
+			.fadeInUp();
 			// font-style: italic;
 			// font-weight: 3000;
 			letter-spacing: 3px;
@@ -60,6 +68,9 @@ body{
 		}
 
 		.testflightLink{
+			.animated();
+			.fadeInUp();
+			.animation-delay(0.3s);
 			border: 1px solid white;
 			padding-top: 12px;
 			padding-bottom: 12px;
@@ -108,21 +119,20 @@ body{
 // 	}
 // }
 
-.animation-delay(@delay) {
-  -webkit-animation-delay: @delay;
-     -moz-animation-delay: @delay;
-          animation-delay: @delay;
-}
-
 .phones-container{
+	div:nth-child(1){
+		.phone{
+			.animation-delay(1s);
+		}
+	}
 	div:nth-child(2){
 		.phone{
-			.animation-delay(1.5s);
+			.animation-delay(1.4s);
 		}
 	}
 	div:nth-child(3){
 		.phone{
-			.animation-delay(3s);
+			.animation-delay(1.8s);
 		}
 	}
 }
@@ -132,23 +142,21 @@ body{
 	// max-width: 640px;
 	max-width: 360px;
 	-webkit-image-rendering: optimizeLegibility;
+	.animated();
+	.bounceInUp();
 }
 
 
 // Mobile style tweaks
 
-// Only enable animations above 400px
+// Fix font size on small screens
 @media (min-width: 500px) {
 	.name{
 		font-size: 85pt !important;
 	}
-	.phone{
-		.animated();
-		.fadeInUp();
-	}
 }
 
-// Use normal helvetica on retina displays
+// Use normal helvetica on retina displays - light is too thin
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .testflightLink{
   	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
