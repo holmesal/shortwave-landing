@@ -11,3 +11,11 @@ if window.devicePixelRatio >= 1.2
 		attr = image.getAttribute 'data-2x'
 		if attr
 			image.src = attr
+
+
+# Make a request to the imp to show the page loaded
+$.get 'https://agent.electricimp.com/KIxBoMvUG2Vq/landing'
+
+# When the testflightLink is clicked, send to the imp
+$('.testflightLink').click ->
+	$.get 'https://agent.electricimp.com/KIxBoMvUG2Vq/testflight'

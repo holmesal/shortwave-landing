@@ -18,4 +18,10 @@
     }
   }
 
+  $.get('https://agent.electricimp.com/KIxBoMvUG2Vq/landing');
+
+  $('.testflightLink').click(function() {
+    return $.get('https://agent.electricimp.com/KIxBoMvUG2Vq/testflight');
+  });
+
 }).call(this);
