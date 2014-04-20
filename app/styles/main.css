@@ -10844,7 +10844,8 @@ body {
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .testflightLink {
+  .testflightLink,
+  .emailLink {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   }
 }
