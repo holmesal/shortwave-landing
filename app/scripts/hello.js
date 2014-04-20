@@ -7,6 +7,8 @@
 
   mixpanel.track_links('.testflightLink', 'Beta link clicked');
 
+  mixpanel.track_links('.emailLink', 'Email link clicked');
+
   if (window.devicePixelRatio >= 1.2) {
     images = document.getElementsByTagName('img');
     for (_i = 0, _len = images.length; _i < _len; _i++) {
@@ -22,6 +24,10 @@
 
   $('.testflightLink').click(function() {
     return $.get('https://agent.electricimp.com/KIxBoMvUG2Vq/testflight');
+  });
+
+  $('.emailLink').click(function() {
+    return $.get('https://agent.electricimp.com/KIxBoMvUG2Vq/email');
   });
 
 }).call(this);

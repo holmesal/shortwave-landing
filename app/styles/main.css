@@ -10771,12 +10771,40 @@ body {
   color: white;
   margin-top: 25px;
   font-size: 12pt;
+  overflow: auto;
 }
 .text-block .testflightLink:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   color: white;
+}
+.text-block .emailLink {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  color: white;
+  overflow: auto;
+  display: block;
+  margin-top: 50px;
+}
+.text-block .emailLink .underlined {
+  text-decoration: underline;
+}
+.text-block .emailLink:hover {
+  text-decoration: none;
 }
 .phones-container div:nth-child(1) .phone {
   -webkit-animation-delay: 1s;
