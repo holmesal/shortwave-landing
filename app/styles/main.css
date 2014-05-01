@@ -10743,7 +10743,7 @@ body {
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
   font-size: 65pt;
   margin-bottom: 40px;
 }
