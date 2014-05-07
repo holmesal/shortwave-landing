@@ -10743,8 +10743,8 @@ body {
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  letter-spacing: 10px;
-  font-size: 65pt;
+  letter-spacing: 4px;
+  font-size: 50pt;
   margin-bottom: 40px;
 }
 .text-block .testflightLink {
@@ -10841,6 +10841,7 @@ body {
 @media (min-width: 500px) {
   .name {
     font-size: 85pt !important;
+    letter-spacing: 10px !important;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
