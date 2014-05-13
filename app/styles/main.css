@@ -10806,6 +10806,18 @@ body {
 .text-block .emailLink:hover {
   text-decoration: none;
 }
+.credits {
+  margin-top: 200px;
+}
+.credits a {
+  color: white;
+}
+.credits a:hover {
+  color: white;
+}
+.credits .people {
+  margin-bottom: 100px;
+}
 .phones-container div:nth-child(1) .phone {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
